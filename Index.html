@@ -7,23 +7,21 @@
   <body style="margin: 0px; overflow: hidden">
     <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
       <a-assets>
-        <asset-item id="suzy" src="monkey.glb"></asset-item>
+        <a-asset-item id="suzy" src="macaca.glb"></a-asset-item>
       </a-assets>
       <a-marker preset="hiro">
-        <a-entiry 
-          id="modelo 3d" 
+        <a-entity 
+          id="modelo3d" 
           position="0 0 0" 
-          rotation="0 0 0" 
-          scale="0.5 0.5 0.5" 
-          gltf-model="#suzy">
-          
-        </a-entiry>
+          rotation="90 0 0" 
+          scale="0.5 0.5 0.5"
+          gltf-model="#suzy">          
+        </a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
-
 <!-- <html>
   <head>
     <title>Segunda experiência de RA usando AR.js e A-frame com imagem e marcador hiro</title>
